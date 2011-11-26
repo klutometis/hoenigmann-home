@@ -1,0 +1,3 @@
+[submodule "swd/sicp"]
+	path = swd/sicp
+	url = git@github.com:hoenigmann/sicp.git
