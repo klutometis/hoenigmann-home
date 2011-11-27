@@ -1,0 +1,2 @@
+M-r Surround what is "aRound" the point with a pair of parenthesis.
+M-( Surround what is in front of the point with a pair of parenthesis.
