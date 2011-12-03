@@ -8,3 +8,5 @@
 ;;; Enabler couple of hooks so scheme mode major mode and paredit mode come up at the same time
 (add-hook 'scheme-mode-hook 'enable-paredit-mode)
 (add-hook 'inferior-scheme-mode-hook 'enable-paredit-mode)
+
+(put 'scroll-left 'disabled nil)
