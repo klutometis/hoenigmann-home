@@ -1,0 +1,2 @@
+* Magit
+  [[http://daemianmack.com/magit-cheatsheet.html#sec-3][Magit cheat sheet]]
