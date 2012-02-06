@@ -9,7 +9,6 @@
 
 [status]
   relativePaths = false
-  showUntrackedFiles = no
 
 [core]
   pager = less -i -R

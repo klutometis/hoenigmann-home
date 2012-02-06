@@ -83,10 +83,17 @@
   (interactive)
   (scheme-send-region (point-min) (point-max)))
 
+(defun scheme-send-buffer-and-go ()
+  "Send and go."
+  (interactive)
+  (scheme-send-buffer)
+  (switch-to-buffer-other-window "*scheme*"))
+
 (add-hook
  'scheme-mode-hook
  (lambda ()
-   (define-key scheme-mode-map (kbd "C-c b") 'scheme-send-buffer)))
+   (define-key scheme-mode-map (kbd "C-c b") 'scheme-send-buffer)
+   (define-key scheme-mode-map (kbd "C-c B") 'scheme-send-buffer-and-go)))
 
 ;;; Answer yes-or-no questions with <return>.
 (define-key query-replace-map (kbd "C-m") 'act)

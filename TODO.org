@@ -1,2 +1,18 @@
 * Magit
   [[http://daemianmack.com/magit-cheatsheet.html#sec-3][Magit cheat sheet]]
+
+
+** Staged and Unstaged commits.
+   Git fad is micro-commits, compared to svn which had larger commits
+   in workflow.
+
+** Commands used when in the magit:
+   A List:
+   - C-c g bring up the magit buffer.
+   - M-<return> get you a new line item in a list like this, after the
+     first line.
+   
+??? When executing the 
+
+** Other buffers
+   [[http://www.gnu.org/software/emacs/manual/html_node/elisp/Displaying-Buffers.html][Displaying buffers]]
