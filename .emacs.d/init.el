@@ -95,5 +95,19 @@
    (define-key scheme-mode-map (kbd "C-c b") 'scheme-send-buffer)
    (define-key scheme-mode-map (kbd "C-c B") 'scheme-send-buffer-and-go)))
 
+;;;;;; mini-kanren
+(put 'run 'scheme-indent-function 1)
+(put 'run* 'scheme-indent-function 1)
+(put 'fresh 'scheme-indent-function 1)
+
+;;; Unification (i.e. "identical to" as goal)
+(font-lock-add-keywords
+ 'scheme-mode
+ '(("(\\(==\\)\\>"
+    (0 (prog1 ()
+         (compose-region (match-beginning 1)
+                         (match-end 1)
+                         ?≡))))))
+
 ;;; Answer yes-or-no questions with <return>.
 (define-key query-replace-map (kbd "C-m") 'act)
